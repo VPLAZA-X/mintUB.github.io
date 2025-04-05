@@ -34,7 +34,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(to bottom, #000, #ff8c00); /* Black to orange background */
+            background: linear-gradient(to bottom, #003300, #66bb6a); /* Black to light green background */
             color: #ffffff; /* White text color */
             padding: 0 2rem;
             margin: 0;
@@ -66,27 +66,34 @@
         }
 
         .nav-button:hover {
-            color: rgba(255, 165, 0, 0.7); /* Change text color on hover */
+            color: #66cc7a; /* Change text color to light green on hover */
         }
 
         h2 {
             margin-top: 80px; /* Space below the navbar */
+            color: #66bb6a; /* Light green text for the header */
         }
 
         input {
             width: 300px;
             padding: 10px;
             font-size: 16px;
-            border: none;
+            border: 1px solid #66bb6a; /* Light green border */
             border-radius: 5px;
             margin-top: 20px;
+            color: #66bb6a; /* Light green text */
+            background: rgba(0, 0, 0, 0.7); /* Dark background for input */
+        }
+
+        input::placeholder {
+            color: rgba(102, 187, 106, 0.5); /* Light green placeholder text */
         }
 
         button {
             margin-top: 10px;
             padding: 10px 20px;
             font-size: 16px;
-            background: linear-gradient(135deg, #ffcc00, #ff7f30); /* Button gradient */
+            background: linear-gradient(135deg, #66bb6a, #66cc7a); /* Button gradient */
             color: white;
             border: none;
             border-radius: 5px;
@@ -95,7 +102,7 @@
         }
 
         button:hover {
-            background: #ff7f30; /* Darker orange on hover */
+            background: #66cc7a; /* Darker green on hover */
         }
     </style>
 </head>
@@ -106,7 +113,7 @@
         <a href="/gms" class="nav-button">Games</a>
         <a href="/apps" class="nav-button">Apps</a>
         <a href="/sports" class="nav-button">Sports</a>
-          <a href="/search" class="nav-button">Pro_y</a>
+        <a href="/search" class="nav-button">Pro_y</a>
     </nav>
 
     <h2>Type a URL (https://...) or a Search Query</h2>
